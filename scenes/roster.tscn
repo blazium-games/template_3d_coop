@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/follow.gd" id="1_follow"]
+
+[node name="Follow" type="Node2D"]
+script = ExtResource("1_follow")
+[node name="SheetLens" type="Camera2D" parent="."]
+position = Vector2(200, 150)
+[node name="Field" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, 400, 0, 400, 240, 0, 240)
+color = Color(0.16, 0.18, 0.22, 1)
+[node name="RunnerPick" type="ColorRect" parent="."]
+offset_left = 60
+offset_top = 80
+offset_right = 160
+offset_bottom = 180
+color = Color(0.3, 0.6, 0.9, 1)
+[node name="AnchorPick" type="ColorRect" parent="."]
+offset_left = 200
+offset_top = 80
+offset_right = 300
+offset_bottom = 180
+color = Color(0.9, 0.5, 0.2, 1)
